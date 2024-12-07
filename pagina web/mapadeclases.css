@@ -1,0 +1,215 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004080; /* Azul UNAH de fondo */
+    color: white; /* Color de texto blanco para contrastar */
+}
+
+
+/* Enlace sin subrayado para el Mapa de clases y otros enlaces de navegación */
+.nav-link {
+    color: inherit; /* Hereda el color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+
+.franja-azul {
+    background-color: #004080; /* Azul UNAH */
+    height: 50px; /* Altura de la franja */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilo uniforme para encabezados */
+h1, h2, h3, h4 {
+    font-size: 2em; /* Ajustar el tamaño de fuente si es necesario */
+    font-weight: bold;
+    color: #FFD700; /* Cambiado a amarillo para contraste */
+    text-align: center; /* Alineación centrada */
+    margin: 20px 0;
+}
+
+/* Estilos adicionales para el header y el main */
+header {
+    background-color: #004080; /* Azul UNAH */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenido principal */
+    color: #333; /* Color de texto para el contenido principal */
+}
+
+footer {
+    background-color: #004080; /* Azul UNAH para el footer */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #F8F9FA;
+    color: #333;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.sello-container {
+    display: flex;
+    align-items: center;
+}
+
+.sello-container .sello-image {
+    height: 45px;
+    filter: brightness(0.9); /* Opcional para que combine con el fondo */
+}
+
+/* Estilos para la tabla del plan de estudios */
+.plan-estudios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.plan-estudios th, .plan-estudios td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Espaciado para mayor claridad */
+    text-align: center;
+}
+
+.plan-estudios th {
+    background-color: #004080; /* Azul UNAH */
+    color: white;
+    padding: 15px;
+}
+
+.plan-estudios tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.plan-estudios tr:hover {
+    background-color: #ffd700; /* Amarillo UNAH */
+}
+
+/* Estilo para resaltar clases dependientes */
+.requisito-dependiente {
+    background-color: #ffd700; /* Color de resaltado para clases dependientes */
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 5px;
+    display: none; /* Oculto inicialmente */
+    z-index: 1000;
+    font-size: 0.9rem;
+}
+
+/* Navbar */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0 5px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFD700; /* Amarillo UNAH para enlaces */
+    padding: 8px 12px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #FFD700;
+    color: #004080; /* Azul UNAH al pasar el mouse */
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #FFD700; /* Amarillo UNAH */
+    margin: 3px 0;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #004080; /* Azul UNAH */
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

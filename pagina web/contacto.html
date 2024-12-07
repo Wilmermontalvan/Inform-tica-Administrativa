@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <!-- Verifica que esta ruta sea correcta -->
+    <link rel="stylesheet" href="./contacto.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="hola mundo.html">Inicio</a></li>
+            
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contáctanos</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Esta es la página de contacto. Completa el formulario para enviarnos tus datos.</p>
+        </section>
+
+        <!-- Contenedor centrado -->
+        <section id="contacto">
+            <div class="form-container">
+                <h2>Formulario de contacto</h2>
+                <form action="/procesar_formulario" method="POST">
+                    <label for="nombre-completo">Nombre completo:</label>
+                    <input type="text" id="nombre-completo" name="nombre_completo" required>
+
+                    <label for="numero-cuenta">Número de cuenta:</label>
+                    <input type="text" id="numero-cuenta" name="numero_cuenta" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
